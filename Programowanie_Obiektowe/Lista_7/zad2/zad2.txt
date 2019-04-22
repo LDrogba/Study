@@ -1,0 +1,100 @@
+
+key ={
+'a' => 'b',
+'b' => 'c',
+'c' => 'd',
+'d' => 'e',
+'e' => 'f',
+'f' => 'g',
+'g' => 'h',
+'h' => 'i',
+'i' => 'j',
+'j' => 'k',
+'k' => 'l',
+'l' => 'm',
+'m' => 'n',
+'n' => 'o',
+'o' => 'p',
+'p' => 'q',
+'q' => 'r',
+'r' => 's',
+'s' => 't',
+'t' => 'u',
+'u' => 'v',
+'v' => 'w',
+'w' => 'x',
+'x' => 'y',
+'y' => 'z',
+'z' => 'a'
+}
+
+dekey ={
+'b' => 'a',
+'c' => 'b',
+'d' => 'c',
+'e' => 'd',
+'f' => 'e',
+'g' => 'f',
+'h' => 'g',
+'i' => 'h',
+'j' => 'i',
+'k' => 'j',
+'l' => 'k',
+'m' => 'l',
+'n' => 'm',
+'o' => 'n',
+'p' => 'o',
+'q' => 'p',
+'r' => 'q',
+'s' => 'r',
+'t' => 's',
+'u' => 't',
+'v' => 'u',
+'w' => 'v',
+'x' => 'w',
+'y' => 'x',
+'z' => 'y',
+'a' => 'z'
+}
+
+
+class Jawna
+  def initialize( word )
+  	@w = word
+  end
+  
+  def to_s(array)
+    return array.join
+  end
+  
+  def code (key)
+    nword = [];
+	  for i in 0 .. @w.length - 1
+	   nword << key[@w[i]]
+  	end
+  	return nword
+  end
+end
+
+class Zaszyfrowane
+  def initialize( word )
+	  @w = word
+  end
+  
+  def to_s(array)
+    return array.join
+  end
+  
+  def decode (key)
+     nword = [];
+	  for i in 0 .. @w.length-1
+	   nword << key[@w[i]]
+	  end
+	return nword
+  end
+end
+
+test = Jawna.new("ruby")
+test.to_s(test.code(key))
+test2 = Zaszyfrowane.new("svcz")
+test2.to_s(test2.decode(dekey))

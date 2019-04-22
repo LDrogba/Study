@@ -1,0 +1,79 @@
+class Kolekcja
+  def initialize (size) 
+    @tab = Array.new(size, 0)
+  end
+  
+  def swap(x,y) 
+    tmp = @tab[x]
+    @tab[x] = @tab[y]
+    @tab[y] = tmp
+  end
+  
+  def length()
+    @tab.size
+  end
+  
+  def get(i)
+    @tab[i]
+  end
+  
+  def set(i, x)
+    @tab[i] = x
+  end
+  
+  def show_tab()
+    return @tab
+  end    
+end
+
+class Sortowanie
+  
+  def method_sort_1(collection)
+    if (collection.is_a?(Kolekcja))
+      
+      n = collection.length()
+      
+      loop do
+        for i in 0..n-2 do
+          if (collection.get(i) > collection.get(i+1))
+            collection.swap(i, i+1)
+          end
+        end
+        n = n-1
+        break if(n<=1)
+      end
+    else 
+      print "Error: Expected Kolekcja value"
+    end
+  end
+  
+  def method_sort_2(collection)
+    if (collection.is_a?(Kolekcja))
+      
+      i = 1
+      while i < collection.length() do
+        j = i
+        while j > 0 and collection.get(j-1) > collection.get(j) do
+          collection.swap(j, j-1)
+          j = j-1
+        end
+        i = i+1
+      end
+    else
+      print "Error: Expected Kolekcja value"
+    end
+  end          
+    
+end
+
+kolekcja1 = Kolekcja.new(10)
+sortowanie1 = Sortowanie.new()
+
+for i in 0..9 do
+  kolekcja1.set(i, 9-i)
+end
+
+
+kolekcja1.show_tab()
+sortowanie1.method_sort_2(kolekcja1)
+kolekcja1.show_tab()
