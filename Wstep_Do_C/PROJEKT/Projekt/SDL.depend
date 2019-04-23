@@ -1,0 +1,570 @@
+# depslib dependency file v1.0
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\game_date.c
+	"game_date.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\game_date.h
+	"SDL_window.h"
+	"room.h"
+	"maze_date.h"
+	<stdbool.h>
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\sdl_window.h
+	"Global.h"
+	<SDL.h>
+	<stdbool.h>
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\global.h
+	"States.h"
+	<SDL.h>
+	"SDL_ttf.h"
+	<stdbool.h>
+	"room.h"
+	"maze_date.h"
+	"stdbool.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\states.h
+	<stdio.h>
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\begin_code.h
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\close_code.h
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794181 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1508794182 d:\uni\git\study\wstep_do_c\projekt\biblioteki\sdl\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1454366533 d:\uni\git\study\wstep_do_c\projekt\biblioteki\ttf\include\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1517871252 d:\uni\git\study\wstep_do_c\projekt\projekt\room.h
+	<stdbool.h>
+	"Chest_str.h"
+
+1517871252 d:\uni\git\study\wstep_do_c\projekt\projekt\chest_str.h
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\maze_date.h
+	<stdio.h>
+	"Global.h"
+
+1517871302 source:d:\uni\git\study\wstep_do_c\projekt\projekt\global.c
+	<stdlib.h>
+	"MazeShow.h"
+	"maze_date.h"
+	"room.h"
+	"game_date.h"
+	"Global.h"
+	"fight.h"
+	"HeroStats.h"
+	"State_GameOver.h"
+	"SDL_ttf.h"
+
+1517871252 d:\uni\git\study\wstep_do_c\projekt\projekt\mazeshow.h
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\fight.h
+	"SDL_ttf.h"
+	<SDL.h>
+	<time.h>
+	<math.h>
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\herostats.h
+	<SDL.h>
+	"SDL_ttf.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\state_gameover.h
+	"States.h"
+	<SDL.h>
+
+1517871252 source:d:\uni\git\study\wstep_do_c\projekt\projekt\herostats_date.c
+	"HeroStats.h"
+	"player.h"
+	"Global.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\player.h
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\main.c
+	<stdlib.h>
+	<stdio.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_keycode.h>
+	"Global.h"
+	"SDL_window.h"
+	"States.h"
+	"State_Entry.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\state_entry.h
+	"States.h"
+	"SDL_ttf.h"
+
+1517871400 source:d:\uni\git\study\wstep_do_c\projekt\projekt\mazegenerator.c
+	<windows.h>
+	"Maze.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\maze.h
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdint.h>
+	<stdbool.h>
+	"Maze_date.h"
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\mazeshow.c
+	<stdlib.h>
+	"MazeShow.h"
+	"maze_date.h"
+	"room.h"
+	"game_date.h"
+	"player.h"
+	"Global.h"
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\sdl_window.c
+	"SDL_window.h"
+	"stdbool.h"
+	<SDL.h>
+	<stdio.h>
+	<string.h>
+
+1556055819 source:d:\uni\git\study\wstep_do_c\projekt\projekt\state_entry.c
+	<SDL.h>
+	"State_Entry.h"
+	"Global.h"
+	"MainMenu.h"
+	"SDL_window.h"
+	"windows.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\mainmenu.h
+	"SDL_ttf.h"
+	"States.h"
+
+1556053644 source:d:\uni\git\study\wstep_do_c\projekt\projekt\state_fight.c
+	<time.h>
+	<stdlib.h>
+	"State_Fight.h"
+	"fight.h"
+	"Global.h"
+	"monster.h"
+	"player.h"
+	"windows.h"
+	"MainMenu.h"
+	"State_GameOver.h"
+	"Game.h"
+	"State_Manual.h"
+	"MazeShow.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\state_fight.h
+	"States.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\monster.h
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\game.h
+	"States.h"
+	"SDL_ttf.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\state_manual.h
+	"States.h"
+
+1517871252 source:d:\uni\git\study\wstep_do_c\projekt\projekt\state_game.c
+	<string.h>
+	"SDL_ttf.h"
+	"Maze.h"
+	"SDL_window.h"
+	"Game.h"
+	"Global.h"
+	"player.h"
+	"game_date.h"
+	"MazeShow.h"
+	"State_Fight.h"
+	"State_HeroStats.h"
+	"State_Win.h"
+	"State_Manual.h"
+	"MainMenu.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\state_herostats.h
+	"States.h"
+
+1517871253 d:\uni\git\study\wstep_do_c\projekt\projekt\state_win.h
+	"States.h"
+	"SDL_ttf.h"
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\state_gameover.c
+	"State_GameOver.h"
+	"Global.h"
+	"game_date.h"
+	"stdlib.h"
+	"MainMenu.h"
+	"MazeShow.h"
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\state_herostats.c
+	"HeroStats.h"
+	"State_HeroStats.h"
+	"Global.h"
+	"MazeShow.h"
+	"player.h"
+	"HeroStats.h"
+	"MainMenu.h"
+	"Game.h"
+	"State_Manual.h"
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\state_mainmenu.c
+	"MainMenu.h"
+	"SDL_window.h"
+	"Global.h"
+	"fight.h"
+	"State_Manual.h"
+	"Game.h"
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\state_manual.c
+	"State_Manual.h"
+	"SDL.h"
+	"Global.h"
+	"MainMenu.h"
+	"Game.h"
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\state_win.c
+	<stdlib.h>
+	"State_Win.h"
+	"MazeShow.h"
+	"Global.h"
+	"game_date.h"
+	"MainMenu.h"
+
+1517871253 source:d:\uni\git\study\wstep_do_c\projekt\projekt\states.c
+	"States.h"
+	"Global.h"
+	<stdlib.h>
+	"State_Entry.h"
+	"State_Fight.h"
+	"State_GameOver.h"
+	"State_HeroStats.h"
+	"State_Manual.h"
+	"State_Win.h"
+	"Game.h"
+	"MainMenu.h"
+

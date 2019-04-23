@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SDL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Global\;States\;States\State_GameOver\;States\State_Entry\;States\State_MainMenu\;States\State_Fight\;States\State_Game\;States\State_HeroStats\;States\State_Win\;States\State_Manual\;States\States\;Maze\;SDL_Window\;Main\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SDL" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug/" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="mingw32" />
+					<Add library="winmm" />
+					<Add library="user32" />
+					<Add library="ole32" />
+					<Add library="ws2_32" />
+					<Add library="gdi32" />
+					<Add library="advapi32" />
+					<Add library="imm32" />
+					<Add library="version" />
+					<Add library="oleaut32" />
+					<Add library="../Biblioteki/SDL/lib/libSDL2.a" />
+					<Add library="../Biblioteki/SDL/lib/libSDL2_test.a" />
+					<Add library="../Biblioteki/SDL/lib/libSDL2main.a" />
+					<Add library="../Biblioteki/TTF/lib/libSDL2_ttf.dll.a" />
+					<Add directory="TTF/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SDL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="mingw32" />
+					<Add library="winmm" />
+					<Add library="user32" />
+					<Add library="ole32" />
+					<Add library="ws2_32" />
+					<Add library="gdi32" />
+					<Add library="advapi32" />
+					<Add library="imm32" />
+					<Add library="version" />
+					<Add library="oleaut32" />
+					<Add library="../Biblioteki/SDL/lib/libSDL2.a" />
+					<Add library="../Biblioteki/SDL/lib/libSDL2_test.a" />
+					<Add library="../Biblioteki/SDL/lib/libSDL2main.a" />
+					<Add library="../Biblioteki/TTF/lib/libSDL2_ttf.dll.a" />
+					<Add directory="TTF/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c99" />
+			<Add directory="../Biblioteki/SDL/include/SDL2" />
+			<Add directory="../Biblioteki/TTF/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="../Biblioteki/SDL/lib/libSDL2.a" />
+			<Add library="../Biblioteki/SDL/lib/libSDL2_test.a" />
+			<Add library="../Biblioteki/SDL/lib/libSDL2main.a" />
+			<Add library="winmm" />
+			<Add library="user32" />
+			<Add library="ole32" />
+			<Add library="ws2_32" />
+			<Add library="gdi32" />
+			<Add library="advapi32" />
+			<Add library="imm32" />
+			<Add library="version" />
+			<Add library="oleaut32" />
+			<Add library="../Biblioteki/TTF/lib/libSDL2_ttf.dll.a" />
+		</Linker>
+		<Unit filename="Chest_str.h">
+			<Option virtualFolder="Global/" />
+		</Unit>
+		<Unit filename="Game.h">
+			<Option virtualFolder="States/State_Game/" />
+		</Unit>
+		<Unit filename="Global.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Global/" />
+		</Unit>
+		<Unit filename="Global.h">
+			<Option virtualFolder="Global/" />
+		</Unit>
+		<Unit filename="HeroStats.h">
+			<Option virtualFolder="States/State_HeroStats/" />
+		</Unit>
+		<Unit filename="HeroStats_date.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_HeroStats/" />
+		</Unit>
+		<Unit filename="MainMenu.h">
+			<Option virtualFolder="States/State_MainMenu/" />
+		</Unit>
+		<Unit filename="Maze.h">
+			<Option virtualFolder="Maze/" />
+		</Unit>
+		<Unit filename="MazeGenerator.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Maze/" />
+		</Unit>
+		<Unit filename="MazeShow.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Maze/" />
+		</Unit>
+		<Unit filename="MazeShow.h">
+			<Option virtualFolder="Maze/" />
+		</Unit>
+		<Unit filename="SDL_window.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="SDL_Window/" />
+		</Unit>
+		<Unit filename="SDL_window.h">
+			<Option virtualFolder="SDL_Window/" />
+		</Unit>
+		<Unit filename="State_Entry.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_Entry/" />
+		</Unit>
+		<Unit filename="State_Entry.h">
+			<Option virtualFolder="States/State_Entry/" />
+		</Unit>
+		<Unit filename="State_Fight.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_Fight/" />
+		</Unit>
+		<Unit filename="State_Fight.h">
+			<Option virtualFolder="States/State_Fight/" />
+		</Unit>
+		<Unit filename="State_Game.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_Game/" />
+		</Unit>
+		<Unit filename="State_GameOver.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_GameOver/" />
+		</Unit>
+		<Unit filename="State_GameOver.h">
+			<Option virtualFolder="States/State_GameOver/" />
+		</Unit>
+		<Unit filename="State_HeroStats.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_HeroStats/" />
+		</Unit>
+		<Unit filename="State_HeroStats.h">
+			<Option virtualFolder="States/State_HeroStats/" />
+		</Unit>
+		<Unit filename="State_MainMenu.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_MainMenu/" />
+		</Unit>
+		<Unit filename="State_Manual.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_Manual/" />
+		</Unit>
+		<Unit filename="State_Manual.h">
+			<Option virtualFolder="States/State_Manual/" />
+		</Unit>
+		<Unit filename="State_Win.h">
+			<Option virtualFolder="States/State_Win/" />
+		</Unit>
+		<Unit filename="State_win.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_Win/" />
+		</Unit>
+		<Unit filename="States.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/States/" />
+		</Unit>
+		<Unit filename="States.h">
+			<Option virtualFolder="States/States/" />
+		</Unit>
+		<Unit filename="fight.h">
+			<Option virtualFolder="States/State_Fight/" />
+		</Unit>
+		<Unit filename="game_date.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="States/State_Game/" />
+		</Unit>
+		<Unit filename="game_date.h">
+			<Option virtualFolder="States/State_Game/" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="Main/" />
+		</Unit>
+		<Unit filename="maze_date.h">
+			<Option virtualFolder="Maze/" />
+		</Unit>
+		<Unit filename="monster.h">
+			<Option virtualFolder="States/State_Fight/" />
+		</Unit>
+		<Unit filename="player.h">
+			<Option virtualFolder="Global/" />
+		</Unit>
+		<Unit filename="room.h">
+			<Option virtualFolder="Global/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
