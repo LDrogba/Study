@@ -1,149 +1,100 @@
-class Node
 
-  @next_node = nil
-  @prev_node = nil
+key ={
+'a' => 'b',
+'b' => 'c',
+'c' => 'd',
+'d' => 'e',
+'e' => 'f',
+'f' => 'g',
+'g' => 'h',
+'h' => 'i',
+'i' => 'j',
+'j' => 'k',
+'k' => 'l',
+'l' => 'm',
+'m' => 'n',
+'n' => 'o',
+'o' => 'p',
+'p' => 'q',
+'q' => 'r',
+'r' => 's',
+'s' => 't',
+'t' => 'u',
+'u' => 'v',
+'v' => 'w',
+'w' => 'x',
+'x' => 'y',
+'y' => 'z',
+'z' => 'a'
+}
 
-  def initialize()
-    @node_data = nil
-  end
+dekey ={
+'b' => 'a',
+'c' => 'b',
+'d' => 'c',
+'e' => 'd',
+'f' => 'e',
+'g' => 'f',
+'h' => 'g',
+'i' => 'h',
+'j' => 'i',
+'k' => 'j',
+'l' => 'k',
+'m' => 'l',
+'n' => 'm',
+'o' => 'n',
+'p' => 'o',
+'q' => 'p',
+'r' => 'q',
+'s' => 'r',
+'t' => 's',
+'u' => 't',
+'v' => 'u',
+'w' => 'v',
+'x' => 'w',
+'y' => 'x',
+'z' => 'y',
+'a' => 'z'
+}
 
-  def initialize(data)
-    @node_data = data
-  end
 
-  def set_next(node)
-    @next_node = node
-  end
-
-  def set_prev(node)
-    @prev_node = node
-  end
-
-  def get_next()
-    return @next_node
-  end
-
-  def get_prev()
-    return @prev_node
-  end
-
-  def has_next?()
-    if @next_node
-      return true
-    else
-      return false
-    end
-  end
-
-  def has_prev?()
-    if @prev_node
-      return true
-    else
-      return false
-    end
+class Jawna
+  def initialize( word )
+  	@w = word
   end
   
-  def get_node_data()
-    return @node_data
+  def to_s(array)
+    return array.join
   end
   
-  def print()
-    puts @node_data.to_s
+  def code (key)
+    nword = [];
+	  for i in 0 .. @w.length - 1
+	   nword << key[@w[i]]
+  	end
+  	return nword
   end
 end
 
-class Kolekcja
-
-   def initialize()
-     @root_node = nil
-   end
-
-   def initialize(node)
-     @root_node = node
-   end
-   
-   def get_root_node()
-     return @root_node
-   end
-   
-   def rootnode_prints()
-     @root_node.print()
-     
-     @root_node.get_prev.print()
-   end
-   
-   def insert(node)
-     
-     if (@root_node == nil)
-         @root_node = node
-         return
-     end
-     
-     current_node = @root_node
-     
-     loop do 
-       
-       if(current_node.get_node_data() >= node.get_node_data())
-         if(current_node.get_prev() == nil)
-          @root_node = node
-          current_node.set_prev(node)
-          node.set_next(current_node)
-          return nil
-         else
-          node.set_prev(current_node.get_prev())
-          current_node.set_prev(node)
-          node.set_next(current_node)
-          return nil
-         end
-       else
-        if (current_node.has_next?())
-          current_node = current_node.get_next()
-        else
-          current_node.set_next(node)
-          node.set_prev(current_node)
-          return nil
-        end
-       end
-     end
-    end
-   
-   def print()
-      current_node = @root_node
-      while current_node != nil
-        current_node.print()
-        current_node = current_node.get_next()
-      end
-   end
+class Zaszyfrowane
+  def initialize( word )
+	  @w = word
+  end
+  
+  def to_s(array)
+    return array.join
+  end
+  
+  def decode (key)
+     nword = [];
+	  for i in 0 .. @w.length-1
+	   nword << key[@w[i]]
+	  end
+	return nword
+  end
 end
 
-class Wyszukaj
-  def methode_1(val, kolekcja)
-    current_node = kolekcja.get_root_node()
-    
-     if current_node.get_node_data() == val
-       return current_node.get_node_data()
-     else
-       while current_node.has_next?()
-       current_node = current_node.get_next()
-          if current_node.get_node_data() == val
-            return current_node.get_node_data()
-          end
-       end
-       return nil
-     end
-  end
-end  
-    
-n1 = Node.new(1)
-n2 = Node.new(2)
-n3 = Node.new(3)
-wysz = Wyszukaj.new()
-kolekcja = Kolekcja.new(n1)
-kolekcja.insert(n2)
-kolekcja.insert(n3)
-
-kolekcja.print()
-wysz.methode_1(2, kolekcja)
-    
-    
-    
+test = Jawna.new("ruby")
+test.to_s(test.code(key))
+test2 = Zaszyfrowane.new("svcz")
+test2.to_s(test2.decode(dekey))

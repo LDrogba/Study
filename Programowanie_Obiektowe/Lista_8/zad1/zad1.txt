@@ -1,79 +1,68 @@
-class Kolekcja
-  def initialize (size) 
-    @tab = Array.new(size, 0)
-  end
+class Fixnum
   
-  def swap(x,y) 
-    tmp = @tab[x]
-    @tab[x] = @tab[y]
-    @tab[y] = tmp
-  end
-  
-  def length()
-    @tab.size
-  end
-  
-  def get(i)
-    @tab[i]
-  end
-  
-  def set(i, x)
-    @tab[i] = x
-  end
-  
-  def show_tab()
-    return @tab
-  end    
-end
-
-class Sortowanie
-  
-  def method_sort_1(collection)
-    if (collection.is_a?(Kolekcja))
-      
-      n = collection.length()
-      
-      loop do
-        for i in 0..n-2 do
-          if (collection.get(i) > collection.get(i+1))
-            collection.swap(i, i+1)
-          end
-        end
-        n = n-1
-        break if(n<=1)
+  def czynniki
+    tab = [1]
+    for i in 2..self do
+      if self%i == 0
+        tab << i
       end
-    else 
-      print "Error: Expected Kolekcja value"
     end
+    return tab
   end
   
-  def method_sort_2(collection)
-    if (collection.is_a?(Kolekcja))
-      
-      i = 1
-      while i < collection.length() do
-        j = i
-        while j > 0 and collection.get(j-1) > collection.get(j) do
-          collection.swap(j, j-1)
-          j = j-1
-        end
-        i = i+1
-      end
+  def acky(m)
+    wynik = 0
+    if self == 0
+      wynik += m+1
+    elsif m == 0
+      wynik += (self-1).acky(1)
     else
-      print "Error: Expected Kolekcja value"
+      wynik += (self-1).acky(self.acky(m-1))
     end
-  end          
+    return wynik
+  end
+  
+  def doskonala
+    suma = 0
+    for i in 1..self-1 do
+      if self%i == 0
+        suma += i
+      end
+    end
+    if suma == self
+      return TRUE
+    else
+      return FALSE
+    end
+  end
+  
+  def slownie
+    tab_slow = []
+    
+    slownik = {
+      1 => 'jeden',
+      2 => 'dwa',
+      3 => 'trzy',
+      4 => 'cztery',
+      5 => 'piec',
+      6 => 'szesc',
+      7 => 'siedem',
+      8 => 'osiem',
+      9 => 'dziewiec',
+      0 => 'zero'
+    }
+
+    self2 = self
+    while self2 > 0 do
+      tmp = self2 % 10
+      tab_slow << slownik[tmp]
+      self2 /= 10
+    end
+    tab_slow.reverse!
+    tab_slow.each { |val| print val, " "}
+    
+  end
     
 end
 
-kolekcja1 = Kolekcja.new(10)
-sortowanie1 = Sortowanie.new()
-
-for i in 0..9 do
-  kolekcja1.set(i, 9-i)
-end
-
-
-kolekcja1.show_tab()
-sortowanie1.method_sort_2(kolekcja1)
-kolekcja1.show_tab()
+12345.slownie
